@@ -1,17 +1,19 @@
-# untitled1
+# Baggage Fee Estimator (ICT602 Assignment)
 
-A new Flutter project.
+A Flutter mobile application developed for the UiTM ICT602 (Mobile Technology) course assignment. 
 
-## Getting Started
+## What does it do?
+This application helps estimate the excess baggage fee for air travel. Users can input their baggage weight, select their ticket class (Economy or Business), and enter the excess baggage rate per kilogram. 
 
-This project is a starting point for a Flutter application.
+Based on the inputs, the app automatically calculates:
+- **Excess Baggage Weight**: (Total Baggage Weight - Allowed Weight)
+- **Excess Baggage Charge**: (Excess Weight × Rate per kg)
+- **Total Amount Payable**: The final price, which includes an 8% service tax applied to the excess charge.
 
-A few resources to get you started if this is your first Flutter project:
+### Allowed Weight Allowances:
+- **Economy Class**: 20 kg
+- **Business Class**: 40 kg
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech Stack
+- Flutter
+- Dart
