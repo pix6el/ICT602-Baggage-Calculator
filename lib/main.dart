@@ -14,6 +14,7 @@ class BaggageCalculatorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Baggage Fee Estimator',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
@@ -142,6 +143,7 @@ class _HomePageState extends State<HomePage> {
                 keyboardType: TextInputType.number,
                 decoration: const InputDecoration(
                   labelText: 'Excess baggage rate per kg (RM)',
+                  hintText: 'e.g., 15 for Economy, 12 for Business',
                   border: OutlineInputBorder(),
                 ),
               ),
