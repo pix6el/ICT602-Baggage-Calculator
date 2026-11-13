@@ -144,6 +144,7 @@ class _HomePageState extends State<HomePage> {
                 decoration: const InputDecoration(
                   labelText: 'Excess baggage rate per kg (RM)',
                   hintText: 'e.g., 15 for Economy, 12 for Business',
+                  floatingLabelBehavior: FloatingLabelBehavior.always,
                   border: OutlineInputBorder(),
                 ),
               ),
