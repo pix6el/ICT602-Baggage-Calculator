@@ -242,8 +242,8 @@ class AboutPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // 1. Application Icon (Using Flutter Logo as a placeholder)
-              const FlutterLogo(size: 100),
+              // 1. Application Icon (Using custom app logo)
+              Image.asset('assets/images/logo.png', height: 100),
               const SizedBox(height: 24),
               
               // 2. Author Information
