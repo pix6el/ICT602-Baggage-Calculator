@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
 
               // Input Field: Ticket Class Dropdown (Economy or Business)
               DropdownButtonFormField<String>(
-                value: _ticketClass,
+                initialValue: _ticketClass,
                 decoration: const InputDecoration(
                   labelText: 'Ticket Class',
                   border: OutlineInputBorder(),
