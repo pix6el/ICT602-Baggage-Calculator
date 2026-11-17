@@ -220,7 +220,6 @@ class AboutPage extends StatelessWidget {
 
   // Function to open the GitHub URL using the url_launcher package
   Future<void> _launchURL() async {
-    // Note: Change this to your actual GitHub repository URL before submission!
     final Uri url = Uri.parse('https://github.com/pix6el/ICT602-Baggage-Calculator');
     if (!await launchUrl(url)) {
       debugPrint('Could not launch $url');
@@ -246,9 +245,8 @@ class AboutPage extends StatelessWidget {
               Image.asset('assets/images/logo.png', height: 100),
               const SizedBox(height: 24),
               
-              // 2. Author Information
-              // NOTE: Update these details with your actual Name and Matric Number
-              const Text('YOUR NAME HERE', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+              // 2. ME Information
+              const Text('MUHAMMAD HAIKAL AMMAR BIN SHUKOR', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
               const Text('Matric No: 2024405048', style: TextStyle(fontSize: 16)),
               const SizedBox(height: 4),
@@ -262,7 +260,7 @@ class AboutPage extends StatelessWidget {
                   'Open GitHub Repository',
                   style: TextStyle(
                     fontSize: 16,
-                    color: Colors.blue,
+                    color: Colors.lightBlueAccent,
                     decoration: TextDecoration.underline,
                   ),
                 ),
