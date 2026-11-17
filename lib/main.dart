@@ -246,7 +246,7 @@ class AboutPage extends StatelessWidget {
               const SizedBox(height: 24),
               
               // 2. ME Information
-              const Text('MUHAMMAD HAIKAL AMMAR BIN SHUKOR', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+              const Text('MUHAMMAD HAIKAL AMMAR BIN SHUKOR', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),textAlign: TextAlign.center,),
               const SizedBox(height: 8),
               const Text('Matric No: 2024405048', style: TextStyle(fontSize: 16)),
               const SizedBox(height: 4),
