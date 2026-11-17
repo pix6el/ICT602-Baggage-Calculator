@@ -221,7 +221,7 @@ class AboutPage extends StatelessWidget {
   // Function to open the GitHub URL using the url_launcher package
   Future<void> _launchURL() async {
     // Note: Change this to your actual GitHub repository URL before submission!
-    final Uri url = Uri.parse('https://github.com/your-username/your-repo');
+    final Uri url = Uri.parse('https://github.com/pix6el/ICT602-Baggage-Calculator');
     if (!await launchUrl(url)) {
       debugPrint('Could not launch $url');
     }
@@ -250,7 +250,7 @@ class AboutPage extends StatelessWidget {
               // NOTE: Update these details with your actual Name and Matric Number
               const Text('YOUR NAME HERE', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
-              const Text('Matric No: 202XXXXXXX', style: TextStyle(fontSize: 16)),
+              const Text('Matric No: 2024405048', style: TextStyle(fontSize: 16)),
               const SizedBox(height: 4),
               const Text('Course: ICT602 (Mobile Technology)', style: TextStyle(fontSize: 16)),
               const SizedBox(height: 24),
@@ -271,7 +271,7 @@ class AboutPage extends StatelessWidget {
 
               // 4. Copyright Notice
               const Text(
-                '© 2024 Universiti Teknologi MARA. All rights reserved.',
+                '© 2026 Universiti Teknologi MARA. All rights reserved.',
                 style: TextStyle(color: Colors.grey),
                 textAlign: TextAlign.center,
               ),
