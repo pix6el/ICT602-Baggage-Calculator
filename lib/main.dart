@@ -20,7 +20,7 @@ class BaggageCalculatorApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      // We set the initial screen to the HomePage
+      //set the initial screen to the HomePage
       home: const HomePage(),
     );
   }
@@ -50,10 +50,9 @@ class _HomePageState extends State<HomePage> {
   double _totalAmount = 0.0;
 
   // This function performs the calculation when the 'Calculate' button is pressed
-  // I added comments for each calculation step as required by the assignment
   void _calculateFee() {
     // 1. Get the weight and rate from the text fields. 
-    // tryParse safely converts the text to a number, defaulting to 0.0 if empty/invalid.
+    // safely converts the text to a number, defaulting to 0.0 if empty/invalid.
     double weight = double.tryParse(_weightController.text) ?? 0.0;
     double rate = double.tryParse(_rateController.text) ?? 0.0;
 
@@ -73,7 +72,6 @@ class _HomePageState extends State<HomePage> {
     double calculatedExcessCharge = calculatedExcessWeight * rate;
 
     // 5. Calculate total amount payable (excess baggage charge + 8% service tax)
-    // We multiply the charge by 0.08 to get the 8% tax, then add it to the base charge
     double calculatedTotal = calculatedExcessCharge + (0.08 * calculatedExcessCharge);
 
     // 6. Update the state to refresh the UI with the newly calculated values
@@ -91,7 +89,7 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Baggage Fee Estimator'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
-      // We add a Drawer for the Navigation Menu (Home and About)
+      // rawer for the Navigation Menu (Home and About)
       drawer: const NavigationMenu(),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -267,7 +265,7 @@ class AboutPage extends StatelessWidget {
               ),
               const SizedBox(height: 32),
 
-              // 4. Copyright Notice
+              // 4. Copyright
               const Text(
                 '© 2026 Universiti Teknologi MARA. All rights reserved.',
                 style: TextStyle(color: Colors.grey),
